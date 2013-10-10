@@ -2,18 +2,18 @@ IsAny can also be used to catch all values and save them for later comparison/ch
 
 For example, given this interface:
 
-```C#
+~~~C#
     public interface IDocumentStore
     {
         void Delete(int id);
         string Read(int id);
         void Save(int id, string document);
     }
-```
+~~~
 
 You could set it up to store the id and document values passed to the Save method with the following code:
 
-```C#
+~~~C#
             var store = new Mock<IDocumentStore>();
             var savedId = 0;
             var savedDoc = "";
@@ -24,4 +24,4 @@ You could set it up to store the id and document values passed to the Save metho
                     savedId = id;
                     savedDoc = document;
                 });
-```
+~~~
