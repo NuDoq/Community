@@ -2,7 +2,7 @@ IsAny can also be used to catch all values and save them for later comparison/ch
 
 For example, given this interface:
 
-```csharp
+```
     public interface IDocumentStore
     {
         void Delete(int id);
