@@ -1,4 +1,4 @@
 Community
 =========
 
-Community content for the NuDoq site
+Community content and feedback for the NuDoq site
