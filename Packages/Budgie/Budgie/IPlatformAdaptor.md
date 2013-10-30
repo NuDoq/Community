@@ -1,10 +1,10 @@
-##Implementing IPlatformAdaptor
+###Implementing IPlatformAdaptor
 
-Because Budgie is a Portable ClassLibrary, it has no in-built way to generate a SHA1 hash for Twitter. It relies on you providing that code by implementing the `IPlatformAdaptor` interface.
+Because Budgie is a Portable Class Library, it has no in-built way to generate a SHA1 hash for Twitter. It relies on you providing that code by implementing the `IPlatformAdaptor` interface.
 
 Here are some example implementations:
 
-###WPF/Windows Forms/Console
+####WPF/Windows Forms/Console
 
     // using System.Security.Cryptography;
 
@@ -19,7 +19,7 @@ Here are some example implementations:
         }
     }
 
-###Windows Store
+####Windows Store
 
     // using Windows.Security.Cryptography;
     // using Windows.Security.Cryptography.Core;
